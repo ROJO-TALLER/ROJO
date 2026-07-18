@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROJO - Instalaciones y Diseños Personalizados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        .watermark-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .watermark-container::after {
+            content: "ROJO";
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: rgba(0, 0, 0, 0.85);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 900;
+            padding: 3px 8px;
+            border-left: 3px solid #dc2626;
+            letter-spacing: 1px;
+            pointer-events: none;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased scroll-smooth">
+
+    <div class="bg-neutral-900 text-slate-300 text-xs py-2.5 px-4 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6 font-medium">
+                <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n" target="_blank" class="hover:text-red-500 transition-colors flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-sm"></i> +52 8116798738
+                </a>
+                <a href="tel:+528129679434" class="hover:text-red-500 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-red-500"></i> +52 8129679434
+                </a>
+            </div>
+            <div class="flex items-center gap-2 text-slate-400 font-medium">
+                <i class="fa-solid fa-location-dot text-red-500"></i> Apodaca Centro / Col. Teresita, N.L.
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-black shadow-md sticky top-0 z-40 border-b border-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="1783532924478.jpg" alt="Logo ROJO" class="h-14 w-auto object-contain transition-transform hover:scale-105" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
+                <div id="fallback-logo" class="hidden items-center bg-black px-4 py-2 rounded border border-red-600 gap-2">
+                    <span class="text-white font-black text-xl tracking-widest">ROJO</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wider text-slate-300">
+                <a href="#inicio" class="hover:text-red-500 transition-colors">Inicio</a>
+                <a href="#catalogo" class="hover:text-red-500 transition-colors">Catálogo de Productos</a>
+                <a href="#ubicaciones" class="hover:text-red-500 transition-colors">Ubicaciones</a>
+                <a href="#contacto" class="hover:text-red-500 transition-colors">Contacto</a>
+            </nav>
+
+            <div>
+                <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold uppercase px-5 py-3 rounded transition-colors tracking-widest shadow-lg shadow-red-900/20">
+                    Cotización Express
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative bg-neutral-950 text-white py-24 px-4 overflow-hidden border-b-4 border-red-600">
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-neutral-900/90 to-transparent z-0"></div>
+        <div class="max-w-7xl mx-auto relative z-10 max-w-3xl flex flex-col justify-center h-full text-left">
+            <span class="text-red-500 font-extrabold uppercase tracking-widest text-xs mb-3 bg-red-950/50 border border-red-800/60 px-3 py-1 rounded-full w-fit">
+                Ingeniería Automotriz y Electrónica Avanzada
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-none mb-6">
+                Diseños Integrales a la Medida <br><span class="text-red-600">Sistemas ROJO</span>
+            </h1>
+            <p class="text-slate-300 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
+                Desarrollo e instalación de componentes automotrices especializados de alta especificación. Conectividad, potencia y estructuras personalizadas con soporte directo de fábrica.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#catalogo" class="bg-red-600 hover:bg-red-700 text-white font-bold px-7 py-3.5 rounded text-xs uppercase tracking-wider transition-colors shadow-lg">
+                    Explorar Catálogo Exacto
+                </a>
+                <a href="#ubicaciones" class="border border-neutral-700 hover:border-slate-300 hover:bg-white/5 text-white font-bold px-7 py-3.5 rounded text-xs uppercase tracking-wider transition-colors">
+                    Ver Sucursales
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-neutral-900">Catálogo de Productos</h2>
+            <div class="h-1.5 w-20 bg-red-600 mx-auto mt-4 rounded-full"></div>
+            <p class="text-slate-500 mt-4 text-sm max-w-xl mx-auto font-medium">Línea exclusiva de componentes automotrices customizados con códigos de control internos.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_122314542.png" alt="Arnés para cabreado personalizado" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-ARN-001</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">1. Arnés para cabreado personalizado</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-ARN-001" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_122702046.jpg" alt="Alternador extra para climas, sonido y accesorios" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-ALT-002</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">2. Alternador extra para climas, sonido y accesorios</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-ALT-002" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_121953591.jpg" alt="Computadora personalizada con placa speeduino" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-COMP-003</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">3. Computadora personalizada con placa speeduino</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-COMP-003" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_122939328.jpg" alt="Alarmas personalizadas" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-ALM-004</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">4. Alarmas personalizadas</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-ALM-004" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_122107100.jpg" alt="Tableros con conectividad ESP, Bluetooth y WiFi" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-TAB-005</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">5. Tableros con conectividad ESP, Bluetooth y WiFi</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-TAB-005" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_122200108.jpg" alt="Escape personalizado en acero inoxidable resistente" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-ESC-006</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">6. Escape personalizado en acero inoxidable resistente</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-ESC-006" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_122314542.png" alt="Luces y bocinas, bobinas de encendido sumergibles y integrados" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-LUC-007</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">7. Luces y bocinas con Bluetooth sistema de encendido sumergible y integrado</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-LUC-007" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_122432665.jpg" alt="Piezas a la medida para todo tipo de ensambles" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-PIE-008</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">8. Piezas a la medida para todo tipo de ensambles</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-PIE-008" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_122758608.png" alt="Kit de alternador completo con base y manual de instalación" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-KIT-009</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">9. Kit de alternador completo con base y manual de instalación</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-KIT-009" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col sm:col-span-2 lg:col-span-3 lg:max-w-md lg:mx-auto w-full group">
+                <div class="watermark-container h-56 bg-neutral-100 flex items-center justify-center p-2 border-b border-slate-100">
+                    <img src="20260708_122347823.jpg" alt="Instalaciones y diseños personalizados integrales" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6 flex-grow flex flex-col justify-between bg-white">
+                    <div>
+                        <span class="inline-block text-[10px] font-mono bg-slate-100 text-slate-600 font-bold px-2 py-0.5 rounded border border-slate-200 mb-3">CÓDIGO: ROJO-SRV-010</span>
+                        <h3 class="font-bold text-base text-neutral-900 group-hover:text-red-600 transition-colors leading-snug">10. Instalaciones y diseños personalizados integrales</h3>
+                    </div>
+                    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20el%20producto:%20ROJO-SRV-010" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 bg-neutral-950 hover:bg-red-600 text-white font-bold text-xs uppercase py-3 px-4 rounded transition-colors tracking-wider">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> Solicitar Información
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ubicaciones" class="bg-slate-100 py-20 px-4 border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black uppercase tracking-tight text-neutral-900">Ubicaciones Estratégicas</h2>
+                <div class="h-1.5 w-20 bg-red-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-red-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded tracking-widest mb-4 inline-block">Principal / Matriz</span>
+                        <h3 class="text-2xl font-black text-neutral-900 mb-2">Apodaca Centro</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 font-medium">
+                            <i class="fa-solid fa-map-pin text-red-600 mr-1.5"></i> Calle 5 de Mayo #510, entre Reforma y Oaxaca.<br>Apodaca Centro, Nuevo León, México.
+                        </p>
+                    </div>
+                    <div class="bg-neutral-950 text-slate-400 h-52 rounded-md flex flex-col items-center justify-center text-xs text-center p-4 border border-neutral-800">
+                        <i class="fa-solid fa-map-location-dot text-4xl mb-3 text-red-600"></i>
+                        <p class="font-bold text-white uppercase tracking-wider mb-1">Calle 5 de Mayo #510</p>
+                        <p class="text-neutral-500 max-w-xs">Zona Centro Apodaca — Punto de servicio técnico avanzado e instalaciones integrales.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="bg-neutral-900 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded tracking-widest mb-4 inline-block">Sucursal Alterna</span>
+                        <h3 class="text-2xl font-black text-neutral-900 mb-2">Colonia Teresita</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6 font-medium">
+                            <i class="fa-solid fa-map-pin text-red-600 mr-1.5"></i> Calle 5 de Mayo #206.<br>Colonia Teresita, Nuevo León, México.
+                        </p>
+                    </div>
+                    <div class="bg-neutral-950 text-slate-400 h-52 rounded-md flex flex-col items-center justify-center text-xs text-center p-4 border border-neutral-800">
+                        <i class="fa-solid fa-map-location-dot text-4xl mb-3 text-neutral-600"></i>
+                        <p class="font-bold text-white uppercase tracking-wider mb-1">Calle 5 de Mayo #206</p>
+                        <p class="text-neutral-500 max-w-xs">Colonia Teresita — Almacén, distribución logística de componentes customizados y entregas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="py-16 px-4 bg-neutral-950 text-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+            
+            <div>
+                <div class="mb-6">
+                    <img src="1783532924478.jpg" alt="ROJO" class="h-14 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('footer-fallback').style.display='block';">
+                    <div id="footer-fallback" class="hidden text-white font-black text-2xl tracking-widest">ROJO</div>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 font-medium">
+                    Ingeniería customizada de componentes automotrices, paneles de conectividad avanzada inalámbrica y acabados estructurales inoxidables de alta durabilidad.
+                </p>
+                <div class="space-y-3.5 text-sm font-semibold">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-red-500 w-4"></i>
+                        <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n" target="_blank" class="hover:text-red-400 text-green-400">+52 8116798738</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-red-500 w-4"></i>
+                        <a href="tel:+528129679434" class="hover:text-red-400">+52 8129679434</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-black uppercase tracking-widest mb-6 text-red-500 border-b border-neutral-900 pb-3">Navegación del Sitio</h3>
+                <ul class="space-y-3.5 text-sm font-medium text-slate-400">
+                    <li><a href="#inicio" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-red-600"></i> Inicio</a></li>
+                    <li><a href="#catalogo" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-red-600"></i> Catálogo de Productos</a></li>
+                    <li><a href="#ubicaciones" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-red-600"></i> Sucursales y Puntos de Entrega</a></li>
+                    <li><a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n" target="_blank" class="hover:text-white transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px] text-red-600"></i> Soporte de Planta Técnico</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-sm font-black uppercase tracking-widest mb-6 text-red-500 border-b border-neutral-900 pb-3 w-full text-center md:text-left">Acceso de Retorno Móvil</h3>
+                <div class="bg-white p-3.5 rounded-lg inline-block shadow-2xl">
+                    <div id="qrcode" class="p-0.5 bg-white"></div>
+                </div>
+                <span class="text-[11px] text-neutral-500 font-medium mt-3 text-center md:text-left">Escanea el código QR desde tu celular para regresar a este sitio instantáneamente.</span>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-neutral-900 text-center text-[11px] text-neutral-600 font-medium tracking-wide">
+            <p>&copy; 2026 ROJO. Todos los derechos reservados bajo control estricto de marca. Queda estrictamente prohibida la copia, clonación o uso inapropiado del material gráfico e intelectual expuesto sin consentimiento previo por escrito.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/528116798738?text=Hola,%20solicito%20informaci%C3%B3n" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 transition-all hover:scale-110 active:scale-95"
+       title="Abrir Chat Directo ROJO">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            new QRCode(document.getElementById("qrcode"), {
+                text: window.location.href,
+                width: 135,
+                height: 135,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+    </script>
+</body>
+</html>
